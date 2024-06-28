@@ -1,0 +1,62 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+
+.navLinks li {
+  margin: 0 10px;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 80%;
+    background-color: #2c2a2a;
+    text-align: center;
+    /* align-items: center; */
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

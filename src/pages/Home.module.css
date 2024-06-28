@@ -1,0 +1,110 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 89vh; /* Full viewport height */
+    /* width: 100vw; Full viewport width */
+    overflow: hidden; /* Prevent scrolling */
+    padding: 0 20px;
+    background-color: #000;
+    /* background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px); */
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+
+  .whatsapp button, .linkedin button {
+    padding: 10px 15px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .content {
+    /* font-size: large; */
+    color: #ffffff;
+    max-width: 60%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .mlsa p{
+    font-size: 15px;
+  }
+  
+  .logoContainer {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+  
+  .logo {
+    max-width: 80%;
+    height: auto;
+    font: 47px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    align-content: center;
+  }
+
+  .socialIcons button{
+    padding: 10px 15px;
+    background-color: #10f66f;
+    color: #010101;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #0077b5; /* LinkedIn blue */
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 120vh;
+    }
+  
+    .content, .logoContainer {
+      max-width: 100%;
+    }
+  
+    .logoContainer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+    .logo {
+        max-width: 50%;
+        height: auto;
+    }
+  }
