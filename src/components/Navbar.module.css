@@ -4,8 +4,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #191818;
   color: #fff;
+  height: 12vh;
+}
+.navslogo1{
+  width: 100%;
+  max-width: 75px;
+  height: auto; 
+  margin-left: 15px;
+}
+.navslogo2{
+  width: 100%;
+  max-width: 230px;
+  height: auto; 
+  /* margin-left: 20px; */
+}
+.hov:hover {
+  transform: scale(1.08);
+  font-weight: 600;
+  text-decoration: underline;
+  color: #0058fc; /* LinkedIn blue */
 }
 
 .logo {

@@ -69,6 +69,9 @@ const ContactSection = () => {
         <div className={styles.address}>
           <h3>Address</h3>
           <p>Lucknow, Uttar Pradesh, India</p>
+          <a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noopener noreferrer">
+            <button>Visit Map</button>
+          </a>
         </div>
       </div>
     </div>

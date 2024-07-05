@@ -1,0 +1,93 @@
+.eventdashboard {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.eventitem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #1c1c1c;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 40%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.eventitem.left {
+  align-self: flex-start;
+}
+
+.eventitem.right {
+  align-self: flex-end;
+}
+
+.eventicon {
+  width: 100px;
+  height: 100px;
+}
+
+.eventcontent {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.eventdate {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.eventstatus {
+  background: rgb(10, 173, 10);
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-left: 10px;
+}
+
+.eventtitle {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.eventdescription {
+  font-size: 16px;
+}
+
+.timeline {
+  width: 2px;
+  background: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+@media screen and (max-width: 768px) {
+  .eventitem {
+    width: 90%;
+  }
+  .eventitem.left, .eventitem.right {
+    align-self: center;
+  }
+  .timeline {
+    display: none;
+  }
+  .eventstatus {
+    background: rgb(62, 201, 64);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: auto;
+    /* margin-top: auto; */
+  }
+}

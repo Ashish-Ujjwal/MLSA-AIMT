@@ -1,20 +1,24 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
-import log from '../Images/LevelAlpha.png'
-import logs from '../Images/Mlsa Header.png'
+// import log from '../Images/Ml-removebg-preview.png'
+import logs from '../Images/LevelAlpha.png'
 
 
 const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        <div className='mlsa'>
-            <h1><b>MLSA - AIMT</b></h1>
+        <div className={styles.mlsa}>
+            <h1><b>MLSA-AIMT</b></h1>
         </div>
-        <h3><p>MLSA envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education.We are committed to educating everyone about various tech stacks, thus keeping them updated. <br /><br />
-
-Connecting people with technology and assisting them in using it to enhance their lives are the two main objectives of MLSA. In order to achieve this, we organize events, work on projects, and educate everyone on various tech stacks.</p></h3>
+        <div className={styles.para}>
+          <h3><p>
+            <span className={styles.para1}>MLSA [ Microsoft Learn Student Ambassadors ] envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education, and we are committed to educating everyone about various tech stacks, thus keeping them updated.</span> <br></br><br></br>
+            <span className={styles.para2}>To achieve this vision, we focus on several key objectives. Firstly, our educational outreach programs include organizing workshops, webinars, tech talks, and seminars on a wide range of topics. These events cater to different skill levels, ensuring that both beginners and advanced learners can benefit from the knowledge shared by experts and experienced professionals.</span>
+            </p>
+          </h3>
+        </div>
         <div className={styles.socialIcons}>
           <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className={styles.icon} />
@@ -22,13 +26,14 @@ Connecting people with technology and assisting them in using it to enhance thei
           <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
             <FaGithub className={styles.icon} />
           </a>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
-            <button>Join WhatsAppp Group</button>
-          </a>
         </div>
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+          <button className={`${styles.whatsapp} ${styles.icon}`}> <FaWhatsapp className={styles.wlogo} /> Join WhatsApp </button>
+        </a>
       </div>
       <div className={styles.logoContainer}>
-        <img src={log} alt="Logo" className={styles.logo} />
+        <img src={logs} alt="Logo" className={styles.logo} /><br></br>
+        <span className={styles.banner}>MLSA - AIMT</span>
       </div>
     </div>
   );

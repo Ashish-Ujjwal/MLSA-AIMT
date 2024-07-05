@@ -1,45 +1,59 @@
-.home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 89vh; /* Full viewport height */
-    /* width: 100vw; Full viewport width */
-    overflow: hidden; /* Prevent scrolling */
-    padding: 0 20px;
-    background-color: #000;
-    /* background-image: radial-gradient(white 1px, transparent 1px), radial-gradient(white 1px, transparent 1px); */
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+  *{
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
   }
 
-  .whatsapp button, .linkedin button {
-    padding: 10px 15px;
-    background-color: #25d366;
-    color: #fff;
-    border: none;
+  .home {
+    display: flex;
+    align-items: center;
+    height: 89vh; 
+    padding: 0 20px;
+    background-color: #333;
+  }
+  .para{
+    display: flex;
+    color: bisque;
+    text-align: justify;
+    font-size: large;
+  }
+
+   .whatsapp{
+    padding: 5px;
+    width: 100%;
+    background-color: #043c20;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+   }
+   .wlogo{
+    padding-top: 5px;
+   }
+   .para1{
+    color: blueviolet;
+   }
+   .para2{
+    color: rgb(226, 43, 150);
+   }
   
   .content {
-    /* font-size: large; */
     color: #ffffff;
     max-width: 60%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
-  .mlsa p{
-    font-size: 15px;
+  .mlsa {
+    font-size: 20px;
+    font-weight: 900;
+    color: aqua;
+    text-decoration: underline;
   }
   
   .logoContainer {
-    max-width: 50%;
-    display: flex;
-    justify-content: flex-start;
+    max-width: 100%;
+    display: block;
   }
 
   .socialIcons {
@@ -47,38 +61,36 @@
   }
   
   .logo {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
-    font: 47px;
+    color: rgb(121, 68, 133);
+    margin-right: 10px;
+    margin-left: 100px;
   }
   
   .socialIcons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     margin-top: 25px;
     align-content: center;
   }
-
-  .socialIcons button{
-    padding: 10px 15px;
-    background-color: #10f66f;
-    color: #010101;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* margin-top: 10px; */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
   
   .icon {
-    color: #fff;
-    font-size: 30px;
+    color: #c6e579;
+    font-size: 25px;
     transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .banner{
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 145px;
+    color: rgba(0, 100, 240, 0.984);
   }
   
   .icon:hover {
-    color: #0077b5; /* LinkedIn blue */
-    transform: scale(1.2);
+    color: #ffffff; /* LinkedIn blue */
+    transform: scale(1.02);
   }
   
   @media (max-width: 768px) {
@@ -87,7 +99,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 120vh;
+      height: 135vh;
     }
   
     .content, .logoContainer {
@@ -95,9 +107,13 @@
     }
   
     .logoContainer {
-      margin-top: 20px;
       display: flex;
-      justify-content: center;
+      margin-top: 20px;
+      /* justify-content: center; */
+    }
+    .banner{
+      display: flex;
+      margin: auto;
     }
   
     .socialIcons {
@@ -106,5 +122,6 @@
     .logo {
         max-width: 50%;
         height: auto;
+        margin: auto;
     }
   }

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
-        <p>Stay connected with us on social media. Feel free to reach out via LinkedIn, WhatsApp, email, or Instagram.</p>
+        {/* <p>Stay connected with us on social media</p> */}
         <p className={styles.love}>
           Made with <FaHeart className={styles.heartIcon} /> by Ashish Ujjwal
         </p>

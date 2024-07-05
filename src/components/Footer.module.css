@@ -24,13 +24,15 @@
   justify-content: center;
   align-items: center;
   gap: 15px; /* Reduce gap */
-  margin-top: 10px; /* Add some space above the icons */
+  /* margin-top: 10px; Add some space above the icons */
+  margin: auto;
 }
 
 .link {
   color: #fff;
   font-size: 24px;
   transition: transform 0.3s ease, color 0.3s ease;
+  margin: auto 5px;
 }
 
 .link:hover {
