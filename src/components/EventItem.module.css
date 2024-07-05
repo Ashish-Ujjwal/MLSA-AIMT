@@ -1,93 +1,99 @@
-.eventdashboard {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
+.eventDashboard {
   position: relative;
+  width: 100%;
   padding: 20px 0;
+  background: #121212;
+  color: white;
 }
 
-.eventitem {
+.eventItem {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  width: 48%;
   background: #1c1c1c;
   color: white;
   border: 1px solid #333;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
-  width: 40%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px 0;
   position: relative;
+  align-items: center;
 }
 
-.eventitem.left {
-  align-self: flex-start;
+.eventItem:hover{
+  transform: scale(1.01);
+  font-weight: 600;
+  color: #fcfcfc; /* LinkedIn blue */
+}
+/* .eventMarker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #333;
+  right: 101.5%;
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
+.left {
+  left: 0;
+  margin-right: auto;
 }
 
-.eventitem.right {
-  align-self: flex-end;
+.right {
+  left: 52%;
+  margin-right: auto;
 }
 
-.eventicon {
+.eventIcon {
   width: 100px;
   height: 100px;
 }
 
-.eventcontent {
-  text-align: left;
+.eventContent {
   margin-left: 20px;
 }
 
-.eventdate {
+.eventDate {
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.eventstatus {
-  background: rgb(10, 173, 10);
+.eventStatus {
+  background: green;
   color: white;
   border-radius: 5px;
   padding: 2px 5px;
   margin-left: 10px;
 }
 
-.eventtitle {
+.eventTitle {
   font-size: 24px;
   margin: 5px 0;
 }
 
-.eventdescription {
+.eventDescription {
   font-size: 16px;
 }
 
 .timeline {
-  width: 2px;
+  width: 4px;
   background: #333;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
-  .eventitem {
-    width: 90%;
-  }
-  .eventitem.left, .eventitem.right {
-    align-self: center;
+  .eventItem {
+    width: auto;
+    left: 0%;
   }
   .timeline {
     display: none;
-  }
-  .eventstatus {
-    background: rgb(62, 201, 64);
-    color: white;
-    border-radius: 5px;
-    padding: 2px 5px;
-    margin: auto;
-    /* margin-top: auto; */
   }
 }

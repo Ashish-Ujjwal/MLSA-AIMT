@@ -48,7 +48,7 @@
     font-size: 20px;
     font-weight: 900;
     color: aqua;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   .logoContainer {
@@ -89,8 +89,44 @@
   }
   
   .icon:hover {
-    color: #ffffff; /* LinkedIn blue */
+    color: #ffffff; 
     transform: scale(1.02);
+  }
+
+  .logoContainer .logo {
+    animation: tilt 1s infinite alternate ease-in-out;
+  }
+  
+  @keyframes tilt {
+    0% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+
+  /* .marquee-container {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  } */
+  
+  .mlsa {
+    display: inline-block;
+    width: 60%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
   
   @media (max-width: 768px) {
@@ -123,5 +159,9 @@
         max-width: 50%;
         height: auto;
         margin: auto;
+    }
+    .mlsa{
+      animation: marquee 0s linear infinite;
+      display: inline;
     }
   }

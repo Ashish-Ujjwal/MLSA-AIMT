@@ -52,7 +52,45 @@
   font-size: 24px;
   cursor: pointer;
 }
+/* ----------------------------------Down Section work needed------------- */
+.show {
+  display: flex;
+  animation: slideDown 0.5s forwards;
+}
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* For larger screens, show the menu horizontally and hide the burger icon */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+  }
+  .nav-links li {
+    text-align: left;
+  }
+}
+
+/* For mobile screens, show the burger icon and hide the full menu initially */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+/* -----------------------------Up section work needed---------------------------- */
 
 @media (max-width: 768px) {
   .navLinks {
@@ -64,7 +102,6 @@
     width: 80%;
     background-color: #2c2a2a;
     text-align: center;
-    /* align-items: center; */
   }
 
   .navLinks.active {

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
-// import log from '../Images/Ml-removebg-preview.png'
 import logs from '../Images/LevelAlpha.png'
 
 
@@ -14,7 +13,7 @@ const Home = () => {
         </div>
         <div className={styles.para}>
           <h3><p>
-            <span className={styles.para1}>MLSA [ Microsoft Learn Student Ambassadors ] envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education, and we are committed to educating everyone about various tech stacks, thus keeping them updated.</span> <br></br><br></br>
+            <span className={styles.para1}>Microsoft Learn Student Ambassadors - [MLSA] envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education, and we are committed to educating everyone about various tech stacks, thus keeping them updated.</span> <br></br><br></br>
             <span className={styles.para2}>To achieve this vision, we focus on several key objectives. Firstly, our educational outreach programs include organizing workshops, webinars, tech talks, and seminars on a wide range of topics. These events cater to different skill levels, ensuring that both beginners and advanced learners can benefit from the knowledge shared by experts and experienced professionals.</span>
             </p>
           </h3>
