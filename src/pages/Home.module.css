@@ -18,6 +18,9 @@
     text-align: justify;
     font-size: large;
   }
+  .hidden {
+    display: none;
+  }
 
    .whatsapp{
     padding: 5px;
@@ -139,7 +142,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: 135vh;
+      height: 90vh;
     }
   
     .content, .logoContainer {

@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import styles from './Home.module.css';
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import logs from '../Images/LevelAlpha.png'
 
 
 const Home = () => {
+
+  const textRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Set the initial state
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
     <div className={styles.home}>
       <div className={styles.content}>
@@ -14,7 +34,7 @@ const Home = () => {
         <div className={styles.para}>
           <h3><p>
             <span className={styles.para1}>Microsoft Learn Student Ambassadors - [MLSA] envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education, and we are committed to educating everyone about various tech stacks, thus keeping them updated.</span> <br></br><br></br>
-            <span className={styles.para2}>To achieve this vision, we focus on several key objectives. Firstly, our educational outreach programs include organizing workshops, webinars, tech talks, and seminars on a wide range of topics. These events cater to different skill levels, ensuring that both beginners and advanced learners can benefit from the knowledge shared by experts and experienced professionals.</span>
+            <span ref={textRef} className={isMobile ? styles.hidden : styles.para2}>To achieve this vision, we focus on several key objectives. Firstly, our educational outreach programs include organizing workshops, webinars, tech talks, and seminars on a wide range of topics. These events cater to different skill levels, ensuring that both beginners and advanced learners can benefit from the knowledge shared by experts and experienced professionals.</span>
             </p>
           </h3>
         </div>
