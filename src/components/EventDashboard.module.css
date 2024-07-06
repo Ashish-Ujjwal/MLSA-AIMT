@@ -4,33 +4,36 @@
   align-items: center;
   position: relative;
   padding: 20px;
-  background-color: rgb(133, 133, 106);
+  background-color: #868678;
 }
 .Title{
-  width: 40%;
+  width: auto;
+  padding: 12px;
   text-align: center;
-  padding: 10px;
   font-size: 40px;
   font-weight: 700;
-  color: rgb(126, 228, 53);
+  color: rgb(179, 225, 146);
   background: #333;
   border-radius: 15px;
-  position: relative;
+  margin: 20px;
+  /* position: relative; */
 }
 .Title:hover{
   transform: scale(1.01);
   font-weight: 600;
   color: #dab8b8; 
 }
-.timeline {
+
+/* .timeline {
   width: 2px;
-  background: #333;
-  position: absolute;
+  background: #00ff00;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -1px;
-}
+  box-shadow: 0 0 20px #00ff00;
+} */
 
 @media screen and (max-width: 768px) {
   .eventitem {
@@ -43,7 +46,7 @@
     display: none;
   }
   .Title{
-    width: auto;
+    width: 100%;
     text-align: center;
     padding: 13px;
     font-size: 30px;

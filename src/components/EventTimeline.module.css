@@ -1,0 +1,77 @@
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-left: 2px solid #d96060;
+  }
+  
+  .timelineStart,
+  .timelineEnd {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .timelineItem {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .left .dot {
+    left: -31px;
+  }
+  
+  .right .dot {
+    right: -31px;
+  }
+  
+  .left .eventDetails {
+    margin-left: 60px;
+    text-align: left;
+  }
+  
+  .right .eventDetails {
+    margin-right: 60px;
+    text-align: right;
+  }
+  
+  .dot {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #e87878;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dot i {
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .connector {
+    position: absolute;
+    left: -1px;
+    top: 30px;
+    height: 40px;
+    width: 2px;
+    background-color: #007bff;
+  }
+  
+  @media (max-width: 600px) {
+    .timeline {
+      width: 100%;
+    }
+  
+    .left .eventDetails,
+    .right .eventDetails {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  

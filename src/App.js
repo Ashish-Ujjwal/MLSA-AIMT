@@ -4,6 +4,9 @@ import ContactSection from './components/contact';
 // import AllRoutes from './routes/AllRoutes';
 import  Footer  from './components/Footer';
 import EventDashboard from './components/EventDashboard';
+import FAQ from './components/FAQ';
+// import EventTimeline from './components/EventTimeline';
+// import styles from './App.css';
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
       {/* <AllRoutes /> */}
       <Home/>
       <EventDashboard />
+      {/* <EventTimeline /> */}
+      <FAQ />
       <ContactSection/>
       <Footer />
     </div>

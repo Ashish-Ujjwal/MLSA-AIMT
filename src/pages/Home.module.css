@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     height: 89vh; 
-    padding: 0 20px;
-    background-color: #333;
+    padding: 10px 20px;
+    background-color: #c37fcc;
   }
   .para{
     display: flex;
@@ -31,10 +31,10 @@
     padding-top: 5px;
    }
    .para1{
-    color: blueviolet;
+    color: rgb(72, 7, 133);
    }
    .para2{
-    color: rgb(226, 43, 150);
+    color: rgb(97, 5, 59);
    }
   
   .content {
@@ -89,12 +89,16 @@
   }
   
   .icon:hover {
-    color: #ffffff; 
+    color: #ffffff; /* LinkedIn blue */
     transform: scale(1.02);
   }
 
   .logoContainer .logo {
     animation: tilt 1s infinite alternate ease-in-out;
+  }
+  .logoContainer:hover {
+    color: #771b1b; 
+    transform: scale(1.05);
   }
   
   @keyframes tilt {
@@ -117,7 +121,7 @@
   .mlsa {
     display: inline-block;
     width: 60%;
-    animation: marquee 10s linear infinite;
+    /* animation: marquee 10s linear infinite; */
   }
   
   @keyframes marquee {

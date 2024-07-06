@@ -23,7 +23,7 @@
 .hov:hover {
   transform: scale(1.08);
   font-weight: 600;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #0058fc; /* LinkedIn blue */
 }
 
@@ -53,7 +53,7 @@
   cursor: pointer;
 }
 /* ----------------------------------Down Section work needed------------- */
-.show {
+/* .show {
   display: flex;
   animation: slideDown 0.5s forwards;
 }
@@ -67,10 +67,10 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 /* For larger screens, show the menu horizontally and hide the burger icon */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -82,14 +82,14 @@
   .nav-links li {
     text-align: left;
   }
-}
+} */
 
 /* For mobile screens, show the burger icon and hide the full menu initially */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-}
+} */
 /* -----------------------------Up section work needed---------------------------- */
 
 @media (max-width: 768px) {
