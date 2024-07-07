@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #191818;
+  background-color: #000000;
   color: #fff;
   height: 11vh;
 }
@@ -12,19 +12,17 @@
   width: 100%;
   max-width: 75px;
   height: auto; 
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .navslogo2{
   width: 100%;
   max-width: 230px;
   height: auto; 
-  /* margin-left: 20px; */
 }
 .hov:hover {
   transform: scale(1.08);
   font-weight: 600;
-  /* text-decoration: underline; */
-  color: #0058fc; /* LinkedIn blue */
+  color: #0058fc; 
 }
 
 .logo {
@@ -44,7 +42,7 @@
 .navLinks li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .hamburger {
@@ -52,60 +50,40 @@
   font-size: 24px;
   cursor: pointer;
 }
-/* ----------------------------------Down Section work needed------------- */
-/* .show {
-  display: flex;
-  animation: slideDown 0.5s forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
-/* For larger screens, show the menu horizontally and hide the burger icon */
-/* @media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-  .nav-links {
-    display: flex;
-    position: static;
-    flex-direction: row;
-  }
-  .nav-links li {
-    text-align: left;
-  }
-} */
-
-/* For mobile screens, show the burger icon and hide the full menu initially */
-/* @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-} */
-/* -----------------------------Up section work needed---------------------------- */
 
 @media (max-width: 768px) {
-  .navLinks {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 37px;
-    left: 0;
-    width: 80%;
-    background-color: #2c2a2a;
-    text-align: center;
+  .navslogo1{
+    width: 100%;
+    max-width: 75px;
+    height: auto; 
+    margin-left: 2px;
   }
 
-  .navLinks.active {
+  .navLinks {
+    flex-direction: column;
+    position: absolute;
+    top: 87px;
+    left: 0%;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    color: rgb(113, 113, 214);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .navLinks {
     display: flex;
+    list-style: none;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }  
+
+  .navLinks.active {
+    max-height: 450px;
+    opacity: 1;
+    padding: 30px;
   }
 
   .navLinks li {
@@ -114,5 +92,10 @@
 
   .hamburger {
     display: block;
+  }
+  .hov:hover {
+    transform: scale(1.08);
+    font-weight: 700;
+    color: #0058fc; 
   }
 }

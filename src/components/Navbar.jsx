@@ -1,28 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './Navbar.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo1 from '../Images/Ml-removebg-preview.png'
-import logo2 from '../Images/Ml__1_-removebg-preview.png'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const navbarRef = useRef(null);
 
-  const toggleMobileMenu = () => {
+  const toggleMobileMenu = (e) => {
+    // e.stopPropagation(); // Prevent click from propagating to document
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    // setIsMobileMenuOpen(false);
   };
 
+
+  // const handleClickOutside = (event) => {
+  //   if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+  //     setIsMobileMenuOpen(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   if (isMobileMenuOpen) {
+  //     document.addEventListener('click', handleClickOutside);
+  //   } else {
+  //     document.removeEventListener('click', handleClickOutside);
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener('click', handleClickOutside);
+  //   };
+  // }, [isMobileMenuOpen]);
+
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} >
+    {/* <nav className={styles.navbar} ref={navbarRef}> */}
       <div className={styles.navlogo}>
-        <img src={logo1} alt="Logo" className={styles.navslogo1} />
+        <a href="/"><img src={logo1} alt="Logo"  className={styles.navslogo1} /></a>
       </div>
-      {/* <div className={styles.navlogo}>
-        <img src={logo2} alt="Logo" className={styles.navslogo2} />
-      </div> */}
       <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.active : ''}`}>
-        <li className={styles.hov}><a href="#home">Home</a></li>
+        <li className={styles.hov}><a href="/">Home</a></li>
         <li className={styles.hov}><a href="#about">About</a></li>
-        <li className={styles.hov}><a href="#services">Services</a></li>
+        <li className={styles.hov}><a href="#Gallery">Gallery</a></li>
         <li className={styles.hov}><a href="#contact">Contact</a></li>
       </ul>
       <div className={styles.hamburger} onClick={toggleMobileMenu}>

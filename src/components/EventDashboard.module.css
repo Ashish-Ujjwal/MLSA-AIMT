@@ -7,15 +7,15 @@
   background-color: #868678;
 }
 .Title{
-  width: auto;
+  width: 100%;
   padding: 12px;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
   color: rgb(179, 225, 146);
   background: #333;
-  border-radius: 15px;
-  margin: 20px;
+  /* border-radius: 15px; */
+  /* margin: 20px; */
   /* position: relative; */
 }
 .Title:hover{
@@ -54,5 +54,10 @@
     color: rgb(13, 255, 1);
     background: #000000;
     border-radius: 10px;
+  }
+  .Title:hover{
+    transform: scale(1.01);
+    font-weight: 700;
+    color: #dab8b8; 
   }
 }

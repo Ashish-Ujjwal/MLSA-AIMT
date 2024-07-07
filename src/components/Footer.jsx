@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={styles.content}>
         {/* <p>Stay connected with us on social media</p> */}
         <p className={styles.love}>
-          Made with <FaHeart className={styles.heartIcon} /> by Ashish Ujjwal
+          Made with <FaHeart className={styles.heartIcon} /> by<b> Ashish Ujjwal</b>
         </p>
       </div>
       <div className={styles.container}>

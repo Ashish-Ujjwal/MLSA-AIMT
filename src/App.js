@@ -5,17 +5,16 @@ import ContactSection from './components/contact';
 import  Footer  from './components/Footer';
 import EventDashboard from './components/EventDashboard';
 import FAQ from './components/FAQ';
-// import EventTimeline from './components/EventTimeline';
-// import styles from './App.css';
+
 
 function App() {
+  console.log("object")
   return (
     <div className='App'>
       <Navbar />
       {/* <AllRoutes /> */}
       <Home/>
       <EventDashboard />
-      {/* <EventTimeline /> */}
       <FAQ />
       <ContactSection/>
       <Footer />
